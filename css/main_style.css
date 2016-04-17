@@ -67,7 +67,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     background: #f3f3f3;
 }
-
+a, li{
+    outline: none;
+}
 a:hover,
 a:focus {
     text-decoration: none;
