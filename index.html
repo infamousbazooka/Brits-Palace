@@ -102,6 +102,86 @@
                 <h4 class="sub_titl">The perfect place for an outing</h4>
             </div>
         </header>
+        <section id="srch_slide">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="srch_frm">
+                            <h3>Book this Holiday Home</h3>
+                            <form name="sentMessage" id="contactForm">
+                                <div class="control-group form-group">
+                                    <div class="controls">
+                                        <label>Start date </label>
+                                        <input type="date" class="form-control" id="keyword" required data-validation-required-message="Please enter a keyword." placeholder="Any keyword">
+                                        <p class="help-block"></p>
+                                    </div>
+                                </div>
+                                <div class="control-group form-group">
+                                    <div class="controls col-md-6 first">
+                                        <label>No. of days </label>
+                                        <select name="Type" class="form-control" required data-validation-required-message="Please select a type.">
+                                            <option value="" selected="selected">Industrial</option>
+                                            <option value="2">Commercial</option>
+                                            <option value="3">Household</option>
+                                        </select>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-primary">BOOK</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-8 slide_sec">
+                        <div id="slider" class="silde_img flexslider">
+                            <ul class="slides">
+                                <li>
+                                    <img src="images/slider/slider_4.jpg" alt="Slider image" />
+                                    <div class="slide-info">
+                                        <p class="sli_price"> $425.000 </p>
+                                        <p class="sli_titl"> Amillarah Private Islands </p>
+                                        <p class="sli_desc"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/slider/slider_2.jpg" alt="Slider image" />
+                                    <div class="slide-info">
+                                        <p class="sli_price"> $450.000 </p>
+                                        <p class="sli_titl"> Amillarah Lorem Islands </p>
+                                        <p class="sli_desc"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/slider/slider_1.jpg" alt="Slider image" />
+                                    <div class="slide-info">
+                                        <p class="sli_price"> $545.000 </p>
+                                        <p class="sli_titl"> Amillarah Amet Islands </p>
+                                        <p class="sli_desc"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/slider/slider_7.jpg" alt="Slider image" />
+                                    <div class="slide-info">
+                                        <p class="sli_price"> $595.000 </p>
+                                        <p class="sli_titl"> Amillarah Elition Islands </p>
+                                        <p class="sli_desc"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/slider/slider_8.jpg" alt="Slider image" />
+                                    <div class="slide-info">
+                                        <p class="sli_price"> $585.000 </p>
+                                        <p class="sli_titl"> Amillarah Adituer Islands </p>
+                                        <p class="sli_desc"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="spacer-60"></div>
 
 
 
@@ -110,5 +190,70 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/jquery.flexslider-min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                'use strict';
+                $("#owl-carousel").owlCarousel({
+                    items: 5,
+                    itemsDesktop: [1199, 5],
+                    itemsDesktopSmall: [979, 3],
+                    itemsTablet: [768, 2],
+                    itemsMobile: [479, 1],
+                    navigation: true,
+                    navigationText: [
+          "<i class='fa fa-chevron-left icon-white'></i>",
+          "<i class='fa fa-chevron-right icon-white'></i>"
+          ],
+                    autoPlay: false,
+                    pagination: false
+                });
+
+                $("#slide_pan").owlCarousel({
+                    items: 1,
+                    itemsDesktop: [1199, 1],
+                    itemsDesktopSmall: [979, 1],
+                    itemsTablet: [768, 1],
+                    itemsMobile: [479, 1],
+                    navigation: true,
+                    navigationText: [
+          "<i class='fa fa-chevron-left icon-white'></i>",
+          "<i class='fa fa-chevron-right icon-white'></i>"
+          ],
+                    autoPlay: false,
+                    pagination: false
+                });
+
+                $(".testim_sec").owlCarousel({
+                    items: 2,
+                    itemsDesktop: [1199, 2],
+                    itemsDesktopSmall: [979, 2],
+                    itemsTablet: [768, 1],
+                    itemsMobile: [479, 1],
+                    navigation: true,
+                    navigationText: [
+          "<i class='fa fa-chevron-left icon-white'></i>",
+          "<i class='fa fa-chevron-right icon-white'></i>"
+          ],
+                    autoPlay: false,
+                    pagination: false
+                });
+
+
+                $('#slider').flexslider({
+                    animation: "slide",
+                    controlNav: false,
+                    animationLoop: false,
+                    slideshow: false
+                });
+
+                $('ul.drop_menu [data-toggle=dropdown]').on('click', function (event) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    $(this).parent().siblings().removeClass('open');
+                    $(this).parent().toggleClass('open');
+                });
+            });
+
+        </script>
     </body>
 </html>
