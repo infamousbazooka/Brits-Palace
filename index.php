@@ -363,3 +363,9 @@
         </script>
     </body>
 </html>
+<?php
+    require "connect.php";
+    $date = date('Y-m-d H:i:s');
+    $sql = "INSERT into main (datetime)VALUES ('" . $date . "')";
+    $conn->query($sql)
+?>
