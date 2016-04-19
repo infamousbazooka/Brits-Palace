@@ -113,25 +113,42 @@
                         <div class="col-md-4">
                             <div class="srch_frm">
                                 <h3>Book this Holiday Home</h3>
-                                <form name="sentMessage" id="contactForm">
+                                <form name="sentMessage" id="booking">
                                     <div class="control-group form-group">
                                         <div class="controls">
                                             <label>Start date </label>
-                                            <input type="date" class="form-control" id="keyword" required data-validation-required-message="Please enter a keyword." placeholder="Any keyword">
+                                            <input type="date" class="form-control" id="date" required data-validation-required-message="Please enter a start date." placeholder="Date">
                                             <p class="help-block"></p>
                                         </div>
                                     </div>
                                     <div class="control-group form-group">
                                         <div class="controls col-md-6 first">
                                             <label>No. of days </label>
-                                            <input type="number" class="form-control" id="keyword" required data-validation-required-message="Please enter a keyword." placeholder="Any keyword">
+                                            <input type="number" class="form-control" id="days" required data-validation-required-message="Please enter the days." placeholder="No of days">
+                                            <p class="help-block"></p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="control-group form-group">
+                                        <div class="controls first">
+                                            <label>Contact No. </label>
+                                            <input type="phone" class="form-control" id="contact" required data-validation-required-message="Please enter your contact number." placeholder="Contact number.">
+                                            <p class="help-block"></p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="control-group form-group">
+                                        <div class="controls first">
+                                            <label>Email ID. </label>
+                                            <input type="phone" class="form-control" id="email" required data-validation-required-message="Please enter your Email ID." placeholder="Email ID.">
                                             <p class="help-block"></p>
                                         </div>
                                         <div class="clearfix"></div>
                                     </div>
                                     <div id="success"></div>
-                                    <button type="submit" class="btn btn-primary">BOOK</button>
+                                    <button type="button" id="book" class="btn btn-primary">BOOK</button>
                                 </form>
+                                <div id="booked"></div>
                             </div>
                         </div>
                         <div class="col-md-8 slide_sec">
@@ -219,7 +236,7 @@
                                     </div>
                                 </div>
                             </form>
-                            <div class="subbed"></div>
+                            <div id="subbed"></div>
                         </div>
                     </div>
                 </div>
@@ -237,7 +254,7 @@
                             </p>
                             <div class="spacer-20"></div>
                             <p>
-                                Brit’s Palace is located in a central business area but in a quiet neighbourhood, offering you serenity and tranquil, galore.
+                                It is located in a central business area but in a quiet neighbourhood, offering you serenity and tranquil, galore.
                             </p>
                         </div>
                         <div class="col-md-4">
@@ -292,8 +309,56 @@
         <script src="js/jquery.flexslider-min.js"></script>
         <script src="js/main.js"></script>
         <script>
+            function isEmail(email) {
+                var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                return regex.test(email);
+            }
             $('#subscribe #submit').click(function(event) {
-                console.log("kdn");
+                var file = "subscribe.php";
+                var email = $('#subscribe #email').val();
+                if (!isEmail(email)) {
+                    $('#subbed').text('Please enter a valid email address.');
+                    setTimeout(function() {
+                        $("#subbed").html("")
+                    }, 4000);
+                } else{
+                    $.ajax({
+                        url: file,
+                        type: 'POST',
+                        data: {param: email},
+                        success: function(result){
+                            $("#subbed").html(result);
+                            setTimeout(function() {
+                                $("#subbed").html("")
+                            }, 7000);
+                        }
+                    });
+                }
+            });
+            $('#booking #book').click(function(event) {
+                var file = "book.php";
+                var date = $('#booking #date').val();
+                var days = $('#booking #days').val();
+                var email = $('#booking #email').val();
+                var contact = $('#booking #contact').val();
+                if (!isEmail(email)) {
+                    $('#booked').text('Please enter a valid email address.');
+                    setTimeout(function() {
+                        $("#booked").html("")
+                    }, 4000);
+                } else{
+                    $.ajax({
+                        url: file,
+                        type: 'POST',
+                        data: {email: email, date: date, days: days, contact: contact},
+                        success: function(result){
+                            $("#booked").html(result);
+                            setTimeout(function() {
+                                $("#booked").html("")
+                            }, 7000);
+                        }
+                    });
+                }
             });
         </script>
     </body>
