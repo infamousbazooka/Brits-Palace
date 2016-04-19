@@ -8,7 +8,7 @@
 	$days = $_POST['days'];
 	$sql = "INSERT into bookings (email, `date`, days, start_date, contact)VALUES ('" . $email . "', '" . $date . "', '" . $days . "', '" . $startdate . "', '" . $contact . "')";
 	if ($conn->query($sql) === TRUE) {
-		$body = "Hello Brits Palace!! My email address is " . $email . " and my contact number is " . $contact . ". I would like to book your home from " . $startdate . " for " . $days . ".";
+		$body = "Hello Brits Palace!! My email address is " . $email . " and my contact number is " . $contact . ". I would like to book your home from " . $startdate . " for " . $days . " days.";
 		$subject="Booking";
 		$mail = new PHPMailer();
 		$mail->IsHTML(true); 

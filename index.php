@@ -264,7 +264,7 @@
                                     <p>St. Lawrence Agassaim, NH-17, Near Zuari Bridge, Agassaim-Goa</p>
                                 </li>
                                 <li><i class="fa fa-mobile"></i>
-                                    <p> <a href="tel:+91-963-707-8086"> Phone: +91-963-707-8086 </a> </p>
+                                    <p> <a href="tel:+91-915-885-7777"> Phone: +91-915-885-7777 </a> </p>
                                 </li>
                                 <li><i class="fa fa-phone"></i>
                                     <p> <a href="tel: +91-832-2217377"> Phone: +91-832-2217377 </a> </p>
@@ -279,11 +279,11 @@
                                 Useful Links
                             </h2>
                             <ul class="foot_nav">
-                                <li> <a href="index.html">Home Search</a> </li>
-                                <li> <a href="property_listing.html">View Brits Palace</a> </li>
-                                <li> <a href="agents.html">View Packages</a> </li>
-                                <li> <a href="blog.html">About Brits Palace</a> </li>
-                                <li> <a href="contact.html">Get in touch</a> </li>
+                                <li> <a href="#">Home</a> </li>
+                                <li> <a href="Showcase/">View Brits Palace</a> </li>
+                                <li> <a href="Packages/">View Packages</a> </li>
+                                <li> <a href="About/">About Brits Palace</a> </li>
+                                <li> <a href="Contact/">Get in touch</a> </li>
                             </ul>
                         </div>
                     </div>
@@ -361,11 +361,13 @@
                 }
             });
         </script>
+        <?php
+            require "connect.php";
+            $date = date('Y-m-d H:i:s');
+            $sql = "INSERT into main (datetime)VALUES ('" . $date . "')";
+            if ($conn->query($sql)) {
+                echo "djsbn";
+            };
+        ?>
     </body>
 </html>
-<?php
-    require "connect.php";
-    $date = date('Y-m-d H:i:s');
-    $sql = "INSERT into main (datetime)VALUES ('" . $date . "')";
-    $conn->query($sql)
-?>
