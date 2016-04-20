@@ -127,7 +127,7 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="cont_frm">
-                                    <form action="contact.php" method="POST" >
+                                    <form id="messageform" method="POST" >
                                         <div class="control-group form-group col-md-6 first">
                                             <div class="controls">
                                                 <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name." name="name" placeholder="Your Name">
@@ -166,11 +166,12 @@
                                                     <i class="fa fa-paper-plane-o"></i>
                                                 </div>
                                             </div>
-                                            <button type="submit" class="btn btn-primary">Send Message</button>
+                                            <button type="button" class="btn btn-primary">Send Message</button>
                                         </div>
                                         <div class="clearfix"></div>
                                         <div id="success"></div>
                                     </form>
+                                    <div class="display"></div>
                                 </div>
                             </div>
                         </div>
@@ -302,6 +303,23 @@
                     $(this).parent().siblings().removeClass('open');
                     $(this).parent().toggleClass('open');
                 });
+            });
+            $('#messageform button').click(function(event) {
+                var name = $('#name').val();
+                var email = $('#email').val();
+                var phone = $('#phone').val();
+                var address = $('#address').val();
+                var message = $('#message').val();
+                var file = "mail.php";
+                $.ajax({
+                    url: file,
+                    type: 'POST',
+                    data: {name: name, email: email, phone: phone, address: address, message: message},
+                    success: function(data){
+                        $('.display').html(data);
+                    }
+                });
+                
             });
         </script>
     </body>
