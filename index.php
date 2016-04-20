@@ -366,7 +366,6 @@
             $date = date('Y-m-d H:i:s');
             $sql = "INSERT into main (datetime)VALUES ('" . $date . "')";
             if ($conn->query($sql)) {
-                echo "djsbn";
             };
         ?>
     </body>

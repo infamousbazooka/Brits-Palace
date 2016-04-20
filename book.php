@@ -17,7 +17,7 @@
 		$mail->Subject = $subject;
 		$mail->Body = $body;
 		$mail->WordWrap = 50;
-		$mail->AddAddress("magnusfernandes1295@gmail.com");
+		$mail->AddAddress("britspalace@gmail.com");
 		if(!$mail->send()) {
 			echo "There was an error processing your request. Please contact us on +91-9158-857777.";
 		    echo 'Mailer Error: ' . $mail->ErrorInfo;
