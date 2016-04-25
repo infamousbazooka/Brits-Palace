@@ -224,6 +224,8 @@
                     type: 'POST',
                     data: {param1: subject, param2: message},
                     success: function(data){
+                        $('#subject').val("");
+                        $('#message').val("");
                         $("#receive").html(data);
                         setTimeout(function() {
                             $("#receive").html('')

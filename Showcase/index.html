@@ -80,7 +80,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="../images/logo.png" alt="logo">
+                    <a class="navbar-brand" href="index.html"><img src="../images/logo.jpg" alt="logo">
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -350,6 +350,35 @@
                     $(this).parent().siblings().removeClass('open');
                     $(this).parent().toggleClass('open');
                 });
+            });
+            $('#booking #book').click(function(event) {
+                var file = "../book.php";
+                var date = $('#booking #date').val();
+                var days = $('#booking #days').val();
+                var email = $('#booking #email').val();
+                var contact = $('#booking #contact').val();
+                if (!isEmail(email)) {
+                    $('#booked').text('Please enter a valid email address.');
+                    setTimeout(function() {
+                        $("#booked").html("")
+                    }, 4000);
+                } else{
+                    $.ajax({
+                        url: file,
+                        type: 'POST',
+                        data: {email: email, date: date, days: days, contact: contact},
+                        success: function(result){
+                            $('#booking #date').val("");
+                            $('#booking #days').val("");
+                            $('#booking #email').val("");
+                            $('#booking #contact').val("");
+                            $("#booked").html(result);
+                            setTimeout(function() {
+                                $("#booked").html("")
+                            }, 7000);
+                        }
+                    });
+                }
             });
         </script>
     </body>

@@ -9,8 +9,8 @@ a:hover,
 a:focus {
     text-decoration: none;
 }
-
 iframe {width: 100%; border: none;}
+.navbar-brand img{width: 100%;}
 .p0 {
     padding: 0px !important;
 }
