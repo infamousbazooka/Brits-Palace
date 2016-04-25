@@ -1,6 +1,7 @@
 <?php
 	$email = $_POST["param"];
 	require "connect.php";
+	date_default_timezone_set('Asia/Calcutta');
 	$date = date('Y-m-d H:i:s');
 	$sql = "SELECT * FROM subscribers WHERE email='" . $email . "'";
 	$result = $conn->query($sql);

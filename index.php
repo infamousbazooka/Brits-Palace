@@ -9,6 +9,7 @@
         <meta name="author" content="Magnus Fernandes. Amberzile">
         <title>Home | Brits Palace</title>
         <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/jquery-ui.min.css" rel="stylesheet">
         <link href="css/owl.carousel.css" rel="stylesheet">
         <link href="css/owl.theme.css" rel="stylesheet">
         <link href="css/owl.transitions.css" rel="stylesheet">
@@ -40,12 +41,12 @@
                 width: 200px;
                 height: 200px;
                 padding: 20px;
-                border: 3px solid #ef7351;
+                border: 3px solid #ffd700;
             }
             #squaresm{
                 width: 154px;
                 height: 154px;
-                border: 3px solid #ef7351;
+                border: 3px solid #ffd700;
             }
         </style>
     </head>
@@ -117,14 +118,13 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" alt="logo">
+                        <a class="navbar-brand" href="http://britspalace.com/"><img src="images/logo.svg" alt="logo">
                         </a>
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right drop_menu">
                             <li class="active"><a href="#"> Home</a></li>
-                            <li><a href="Showcase/"> Showcase</a></li>
-                            <li><a href="Packages/"> Packages</a></li>
+                            <li><a href="Showcase/"> Packages</a></li>
                             <li><a href="About/"> About us</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
@@ -151,7 +151,7 @@
                                         <div class="control-group form-group">
                                             <div class="controls">
                                                 <label>Start date </label>
-                                                <input type="date" class="form-control" id="date" required data-validation-required-message="Please enter a start date." placeholder="Date">
+                                                <input type="text" class="form-control" id="date" required data-validation-required-message="Please enter a start date." placeholder="Date">
                                                 <p class="help-block"></p>
                                             </div>
                                         </div>
@@ -244,10 +244,10 @@
                     </div>
                 </section>
                 <div class="spacer-60"></div>
-                <section id="testim">
+                <!-- <section id="testim">
                     <div class="container">
                         <div class="row testim_sec m0">
-                            <!-- <div class="testim_box">
+                            <div class="testim_box">
                                 <blockquote>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel nibh vitae sapien lacinia finibus. Etia faucibus lorem in dui laoreet, eget euismod tellus lacinia.
                                 </blockquote>
@@ -260,13 +260,53 @@
                                     </span>
                                     </h6>
                                 </div>
-                            </div> -->
-                            <div class="testim_box">
-                                <h3>TESTIMONIALS ADDING SOON</h3>
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> -->
+                <div class="container">
+                    <div class="row">
+                        <div id="white" class="col-md-8">
+                            <div class="panel-body">
+                                <div class="prop_addinfo">
+                                    <h2 class="add_titl">Additional Details</h2>
+                                    <div class="info_sec first">
+                                        <div class="col-md-4">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-long-arrow-right"></i>
+                                                        <p class="infos"> Area: <span> 1500 sq.mts. </span> </p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-long-arrow-right"></i>
+                                                        <p class="infos"> Car parking: <span> 15 </span> </p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-long-arrow-right"></i>
+                                                        <p class="infos"> Rooms: <span> 3 </span> </p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="spacer-60"></div>
                 <section id="subscribe">
                     <div class="container">
@@ -289,8 +329,15 @@
                         </div>
                     </div>
                 </section>
-                <div class="spacer-60"></div>
             </div>
+            <div class="spacer-60"></div>
+            <div id="map" class="container">
+                <div class="prop_map">
+                    <iframe width="600" height="350" frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJuQLJa6e5vzsRbuxYOUDS-Bw&key=AIzaSyAnnsvMTgnMh3ls3_E6r7P2a1Vyd0bMUWc" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="spacer-60"></div>
             <footer>
                 <div class="footer_top">
                     <div class="container">
@@ -318,7 +365,7 @@
                                         <p> <a href="tel: +91-832-2217377"> Phone: +91-832-2217377 </a> </p>
                                     </li>
                                     <li><i class="fa fa-envelope"></i>
-                                        <p> <a href="mailto:britspalace@gmail.com?Subject=Bookings%20contact"> Email: britspalace@gmail.com </a> </p>
+                                        <p> <a href="mailto:info@britspalace.com?Subject=Bookings%20contact"> Email: info@britspalace.com </a> </p>
                                     </li>
                                 </ul>
                             </div>
@@ -328,7 +375,6 @@
                                 </h2>
                                 <ul class="foot_nav">
                                     <li> <a href="#">Home</a> </li>
-                                    <li> <a href="Showcase/">View Brits Palace</a> </li>
                                     <li> <a href="Packages/">View Packages</a> </li>
                                     <li> <a href="About/">About Brits Palace</a> </li>
                                     <li> <a href="Contact/">Get in touch</a> </li>
@@ -353,11 +399,13 @@
             </footer>
         </div>
         <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/jquery.flexslider-min.js"></script>
         <script src="js/main.js"></script>
         <script>
+            $( "#date" ).datepicker();
             function isEmail(email) {
                 var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
                 return regex.test(email);

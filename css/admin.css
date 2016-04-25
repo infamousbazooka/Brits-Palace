@@ -7,7 +7,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .topsection{
 	background: #023956;
-	border-top: 4px solid #ef7351;
+	border-top: 4px solid #ffd700;
 	padding: 20px 30px;
 }
 .topsection p{
@@ -22,7 +22,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .counter span{
 	padding: 13px;
-	border-bottom: 2px solid #ef7351;
+	border-bottom: 2px solid #ffd700;
 }
 #chartdiv{
 	height: 550px;
@@ -31,7 +31,7 @@ h1,h2,h3,h4,h5,h6,p{
 	padding: 15px;
 }
 footer{
-	border-top: 4px solid #ef7351;
+	border-top: 4px solid #ffd700;
 	background: #023956;
 	padding: 30px;
 	color: #fafafa;
