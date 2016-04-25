@@ -85,6 +85,7 @@
                 width: 100%;
                 height: 100%;
                 opacity: 0.5;
+                cursor: pointer;
             }
             @-webkit-keyframes spin{
                 0%{
