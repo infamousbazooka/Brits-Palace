@@ -23,6 +23,7 @@
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+        <script src="js/jquery.min.js"></script>
         <style>
             .loader{
                 position: fixed;
@@ -30,34 +31,196 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background-color: #fafafa;
+                background-color: #f3f3f3;
                 z-index: 9999;
+                perspective: 1000px;
             }
             #squarebg{
-                margin: auto;
-                position: relative;
+                background-color: #fff;
+                position: absolute;
                 margin-top: -100px;
+                margin-left: -100px;
                 top: 50%;
+                left: 50%;
                 width: 200px;
                 height: 200px;
-                padding: 20px;
-                border: 3px solid #ffd700;
+                border: 3px solid #aa0114;
+                transform-style: preserve-3d;
+                -webkit-animation: spin 3s linear infinite;
+                -moz-animation: spin 3s linear infinite
+                -o-animation: spin 3s linear infinite;
+                -ms-animation: spin 3s linear infinite;
+                animation: spin 3s linear infinite;
             }
             #squaresm{
+                background-color: #fff;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -77px;
+                margin-left: -77px;
                 width: 154px;
                 height: 154px;
                 border: 3px solid #ffd700;
+                transform-style: preserve-3d;
+                -webkit-animation: spiny 3s linear infinite;
+                -moz-animation: spiny 3s linear infinite
+                -o-animation: spiny 3s linear infinite;
+                -ms-animation: spiny 3s linear infinite;
+                animation: spiny 3s linear infinite;
+            }
+            .loader img{
+                width: 150px;
+                height: 150px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -75px;
+                margin-left: -75px;
+            }
+            #animus{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0.5;
+            }
+            @-webkit-keyframes spin{
+                0%{
+                    -webkit-transform:rotateX(0deg);
+                    -moz-transform:rotateX(0deg);
+                    -o-transform:rotateX(0deg);
+                    -ms-transform:rotateX(0deg);
+                    transform:rotateX(0deg);
+                }
+                25%{
+                    -webkit-transform:rotateX(180deg);
+                    -moz-transform:rotateX(180deg);
+                    -o-transform:rotateX(180deg);
+                    -ms-transform:rotateX(180deg);
+                    transform:rotateX(180deg);
+                }
+                75%{
+                    -webkit-transform: none;
+                    -moz-transform:none;
+                    -o-transform:none;
+                    -ms-transform:none;
+                    transform:none;
+                }
+                100%{
+                    -webkit-transform:rotateX(-360deg);
+                    -moz-transform:rotateX(-360deg);
+                    -o-transform:rotateX(-360deg);
+                    -ms-transform:rotateX(-360deg);
+                    transform:rotateX(-360deg);
+                }
+            }
+            @keyframes spin{
+                0%{
+                    -webkit-transform:rotateX(0deg);
+                    -moz-transform:rotateX(0deg);
+                    -o-transform:rotateX(0deg);
+                    -ms-transform:rotateX(0deg);
+                    transform:rotateX(0deg);
+                }
+                25%{
+                    -webkit-transform:rotateX(180deg);
+                    -moz-transform:rotateX(180deg);
+                    -o-transform:rotateX(180deg);
+                    -ms-transform:rotateX(180deg);
+                    transform:rotateX(180deg);
+                }
+                75%{
+                    -webkit-transform: none;
+                    -moz-transform:none;
+                    -o-transform:none;
+                    -ms-transform:none;
+                    transform:none;
+                }
+                100%{
+                    -webkit-transform:rotateX(-360deg);
+                    -moz-transform:rotateX(-360deg);
+                    -o-transform:rotateX(-360deg);
+                    -ms-transform:rotateX(-360deg);
+                    transform:rotateX(-360deg);
+                }
+            }
+            @-webkit-keyframes spiny{
+                0%{
+                    -webkit-transform:rotateY(0deg);
+                    -moz-transform:rotateY(0deg);
+                    -o-transform:rotateY(0deg);
+                    -ms-transform:rotateY(0deg);
+                    transform:rotateY(0deg);
+                }
+                25%{
+                    -webkit-transform:rotateY(180deg);
+                    -moz-transform:rotateY(180deg);
+                    -o-transform:rotateY(180deg);
+                    -ms-transform:rotateY(180deg);
+                    transform:rotateY(180deg);
+                }
+                75%{
+                    -webkit-transform: none;
+                    -moz-transform:none;
+                    -o-transform:none;
+                    -ms-transform:none;
+                    transform:none;
+                }
+                100%{
+                    -webkit-transform:rotateY(-360deg);
+                    -moz-transform:rotateY(-360deg);
+                    -o-transform:rotateY(-360deg);
+                    -ms-transform:rotateY(-360deg);
+                    transform:rotateY(-360deg);
+                }
+            }
+            @keyframes spiny{
+                0%{
+                    -webkit-transform:rotateY(0deg);
+                    -moz-transform:rotateY(0deg);
+                    -o-transform:rotateY(0deg);
+                    -ms-transform:rotateY(0deg);
+                    transform:rotateY(0deg);
+                }
+                25%{
+                    -webkit-transform:rotateY(180deg);
+                    -moz-transform:rotateY(180deg);
+                    -o-transform:rotateY(180deg);
+                    -ms-transform:rotateY(180deg);
+                    transform:rotateY(180deg);
+                }
+                75%{
+                    -webkit-transform: none;
+                    -moz-transform:none;
+                    -o-transform:none;
+                    -ms-transform:none;
+                    transform:none;
+                }
+                100%{
+                    -webkit-transform:rotateY(-360deg);
+                    -moz-transform:rotateY(-360deg);
+                    -o-transform:rotateY(-360deg);
+                    -ms-transform:rotateY(-360deg);
+                    transform:rotateY(-360deg);
+                }
+            }
+            body{
+                overflow: hidden;
             }
         </style>
     </head>
-    <body>
-        <!-- <div class="loader">
+    <body onload="hideloader()">
+        <div class="loader">
             <div id="squarebg">
-                <div id="squaresm">
-                    
-                </div>
             </div>
-        </div> -->
+            <div id="squaresm">
+            </div>
+            <img src="images/square.svg" alt="BRIT'S PALACE">
+            <canvas id="animus"></canvas>
+        </div>
+        <script src="js/animus.js"></script>
         <div class="mainwrapper">
             <section class="top_sec">
                 <div class="container">
@@ -398,13 +561,16 @@
                 </div>
             </footer>
         </div>
-        <script src="js/jquery.min.js"></script>
         <script src="js/jquery-ui.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/jquery.flexslider-min.js"></script>
         <script src="js/main.js"></script>
         <script>
+            function hideloader() {
+                $('body').addClass('loaded');
+                $('body').css('overflow', 'auto');
+            }
             $( "#date" ).datepicker();
             function isEmail(email) {
                 var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;

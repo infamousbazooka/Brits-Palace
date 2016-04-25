@@ -2400,3 +2400,16 @@ section#serv_pg .serv_btm p.desc {
         float: left;
     }
 }
+.loaded .loader{
+        -webkit-transform:translateX(-100%);
+           -moz-transform:translateX(-100%);
+             -o-transform:translateX(-100%);
+            -ms-transform:translateX(-100%);
+                transform:translateX(-100%);
+
+        -webkit-transition: all 0.7s 0.3s ease-out;
+           -moz-transition: all 0.7s 0.3s ease-out;
+             -o-transition: all 0.7s 0.3s ease-out;
+            -ms-transition: all 0.7s 0.3s ease-out;
+                transition: all 0.7s 0.3s ease-out;
+}
