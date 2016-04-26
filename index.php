@@ -101,7 +101,7 @@
                             <li class="active"><a href="#"> Home</a></li>
                             <li><a href="Packages/"> Packages</a></li>
                             <li><a href="About/"> About us</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="Contact/">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -109,7 +109,7 @@
             <div class="mainwrapper">
                 <header id="banner" class="stat_bann">
                     <div class="bannr_sec">
-                        <img src="images/banner_5.jpg" alt="Banner">
+                        <img id="change" src="images/banner/1.jpg" alt="Banner">
                         <h1 class="main_titl">WELCOME TO BRITS PALACE</h1>
                         <div class="col-md-2"></div>
                         <h4 class="sub_titl col-md-8">A luxury living place and the best Goa has to offer. With the perfect blend of natural beauty and contemporary convenience, every room here is infused with light & fresh air and exudes a designer finish with chic furnishings and sleek lines.</h4>
@@ -379,6 +379,24 @@
         <script src="js/jquery.flexslider-min.js"></script>
         <script src="js/main.js"></script>
         <script>
+            var j = 1;
+            var images = ["images/banner/1.jpg", "images/banner/2.jpg", "images/banner/3.jpg", "images/banner/4.jpg", "images/banner/5.jpg"];
+            var index = 1;
+            function rotateImage(){
+                $('#change').fadeOut('slow', function(){
+                    $(this).attr('src', images[index]);
+                    $(this).fadeIn('fast', function(){
+                        if (index == images.length-1){
+                            index = 0;
+                        } else {
+                            index++;
+                        }
+                    });
+                });
+            }
+            $(document).ready(function(){
+                setInterval (rotateImage, 5000);
+            });
             function hideloader() {
                 $('body').addClass('loaded');
                 $('body').css('overflow', 'auto');
