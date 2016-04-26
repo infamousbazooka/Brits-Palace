@@ -70,69 +70,9 @@ var arraylist = {
     },
     "export": {
         "enabled": true
-    },
-    "dataProvider": [{
-        "date": "2016-03-16",
-        "value": 34000
-    }, {
-        "date": "2016-03-17",
-        "value": 33500
-    }, {
-        "date": "2016-03-18",
-        "value": 34890
-    }, {
-        "date": "2016-03-19",
-        "value": 34200
-    }, {
-        "date": "2016-03-20",
-        "value": 33000
-    }, {
-        "date": "2016-03-21",
-        "value": 33000
-    }, {
-        "date": "2016-03-22",
-        "value": 33000
-    }, {
-        "date": "2016-03-23",
-        "value": 34600
-    }, {
-        "date": "2016-03-24",
-        "value": 33000
-    }, {
-        "date": "2016-03-25",
-        "value": 33000
-    }, {
-        "date": "2016-03-26",
-        "value": 33500
-    }, {
-        "date": "2016-03-27",
-        "value": 33500
-    }, {
-        "date": "2016-03-28",
-        "value": 32000
-    }, {
-        "date": "2016-03-29",
-        "value": 32000
-    }, {
-        "date": "2016-03-30",
-        "value": 32000
-    }, {
-        "date": "2016-03-31",
-        "value": 32000
-    }, {
-        "date": "2016-04-01",
-        "value": 32000
-    }]
+    }
 };
-var sum = 0;
-var i = 0;
-for(i = 0; i<arraylist["dataProvider"].length; i++){
-    sum += arraylist["dataProvider"][i]["value"];
-}
-var datstr = arraylist["dataProvider"][arraylist["dataProvider"].length-1]["date"];
-var mydate = new Date(datstr);
-mydate.setDate(mydate.getDate() + 1);
-arraylist['dataProvider'].push({"date":mydate,"value":Math.floor(sum/i)});
+arraylist["dataProvider"] = dbarray;
 
 var chart = AmCharts.makeChart("chartdiv", arraylist);
 
