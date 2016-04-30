@@ -210,7 +210,7 @@
                                             <img src="images/slider/slider_7.jpg" alt="Slider image" />
                                             <div class="slide-info">
                                                 <p class="sli_price"> THE RUMOR MILL </p>
-                                                <p class="sli_titl"> Keep yourself updated with the happenings from around the world at The Rumor Mill. Also chose from a wide range of novels, magazines etc. </p>
+                                                <p class="sli_titl"> Keep yourself updated with the happenings from around the world at The Rumor Mill. Also choose from a wide range of novels, magazines etc. </p>
                                             </div>
                                         </li>
                                     </ul>
@@ -252,7 +252,7 @@
                                                 <li>
                                                     <a href="#">
                                                         <i class="fa fa-long-arrow-right"></i>
-                                                        <p class="infos"> Area: <span> 1500 sq.mts. </span> </p>
+                                                        <p class="infos"> Area: <span> 2000 sq.mts. </span> </p>
                                                     </a>
                                                 </li>
                                             </ul>
@@ -272,7 +272,7 @@
                                                 <li>
                                                     <a href="#">
                                                         <i class="fa fa-long-arrow-right"></i>
-                                                        <p class="infos"> Rooms: <span> 3 </span> </p>
+                                                        <p class="infos"> Rooms: <span> 5 </span> </p>
                                                     </a>
                                                 </li>
                                             </ul>
