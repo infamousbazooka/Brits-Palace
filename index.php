@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
+        <link rel="icon" href="favicon.png" sizes="40x40" type="image/png">
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -101,6 +101,7 @@
                         <ul class="nav navbar-nav navbar-right drop_menu">
                             <li class="active"><a href="#"> Home</a></li>
                             <li><a href="Packages/"> Packages</a></li>
+                            <li><a href="Gallery/"> Gallery</a></li>
                             <li><a href="About/"> About us</a></li>
                             <li><a href="Contact/">Contact</a></li>
                         </ul>
@@ -179,6 +180,27 @@
                                             </div>
                                         </li>
                                         <li>
+                                            <img src="images/slider/slider_6.jpg" alt="Slider image" />
+                                            <div class="slide-info">
+                                                <p class="sli_price"> THE LAZY LOUNGE </p>
+                                                <p class="sli_titl"> Equipped with a 65' TV, the lounge at Brit's Palace is cozy & laid back allowing you to enjoy your favourite shows and movies in HD. </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="images/slider/slider_7.jpg" alt="Slider image" />
+                                            <div class="slide-info">
+                                                <p class="sli_price"> THE RUMOR MILL </p>
+                                                <p class="sli_titl"> Keep yourself updated with the happenings from around the world at The Rumor Mill. Also choose from a wide range of novels, magazines etc. </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="images/slider/slider_8.jpg" alt="Slider image" />
+                                            <div class="slide-info">
+                                                <p class="sli_price"> THE RUMOR MILL </p>
+                                                <p class="sli_titl"> Wine and dine at our majestic eat-in kitchen where everyday meals offer you a chance to sit down and enjoy a meal together. </p>
+                                            </div>
+                                        </li>
+                                        <li>
                                             <img src="images/slider/slider_3.jpg" alt="Slider image" />
                                             <div class="slide-info">
                                                 <p class="sli_price"> THE KING & QUEEN'S ABODE </p>
@@ -197,20 +219,6 @@
                                             <div class="slide-info">
                                                 <p class="sli_price"> THE PRINCESS'S DREAMLAND </p>
                                                 <p class="sli_titl"> Bright & spacious, this exquisite haven is guaranteed to refresh you & keep you coming back for more. </p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <img src="images/slider/slider_6.jpg" alt="Slider image" />
-                                            <div class="slide-info">
-                                                <p class="sli_price"> THE LAZY LOUNGE </p>
-                                                <p class="sli_titl"> Equipped with a 65' TV, the lounge at Brit's Palace is cozy & laid back allowing you to enjoy your favourite shows and movies in HD. </p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <img src="images/slider/slider_7.jpg" alt="Slider image" />
-                                            <div class="slide-info">
-                                                <p class="sli_price"> THE RUMOR MILL </p>
-                                                <p class="sli_titl"> Keep yourself updated with the happenings from around the world at The Rumor Mill. Also choose from a wide range of novels, magazines etc. </p>
                                             </div>
                                         </li>
                                     </ul>
@@ -352,6 +360,7 @@
                                 <ul class="foot_nav">
                                     <li> <a href="#">Home</a> </li>
                                     <li> <a href="Packages/">View Packages</a> </li>
+                                    <li> <a href="Gallery/">Gallery</a> </li>
                                     <li> <a href="About/">About Brits Palace</a> </li>
                                     <li> <a href="Contact/">Get in touch</a> </li>
                                 </ul>
