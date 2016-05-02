@@ -196,7 +196,7 @@
                                         <li>
                                             <img src="images/slider/slider_8.jpg" alt="Slider image" />
                                             <div class="slide-info">
-                                                <p class="sli_price"> THE RUMOR MILL </p>
+                                                <p class="sli_price"> CULINARY CUBICLE </p>
                                                 <p class="sli_titl"> Wine and dine at our majestic eat-in kitchen where everyday meals offer you a chance to sit down and enjoy a meal together. </p>
                                             </div>
                                         </li>
