@@ -951,7 +951,9 @@ h6.auth_nam {
     box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
     margin: 0 0 10px 10px
 }
-
+#banner{
+    background-color: #000;
+}
 .col-md-8.slide_sec .silde_img,
 .srch_frm,
 div#clients .row,
