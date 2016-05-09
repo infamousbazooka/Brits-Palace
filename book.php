@@ -8,22 +8,25 @@
 	$contact = $_POST['contact'];
 	$days = $_POST['days'];
 	$sql = "INSERT into bookings (email, `date`, days, start_date, contact)VALUES ('" . $email . "', '" . $date . "', '" . $days . "', '" . $startdate . "', '" . $contact . "')";
+	$tos = ["info@britspalace.com", "reservations@britspalace.com", "john@britspalace.com"];
 	if ($conn->query($sql) === TRUE) {
-		$body = "Hello Brits Palace!! My email address is " . $email . " and my contact number is " . $contact . ". I would like to book your home from " . $startdate . " for " . $days . " days.";
-		$subject="Booking";
-		$mail = new PHPMailer();
-		$mail->IsHTML(true); 
-		$mail->Host = "relay-hosting.secureserver.net";
-		$mail->From = $email;
-		$mail->Subject = $subject;
-		$mail->Body = $body;
-		$mail->WordWrap = 50;
-		$mail->AddAddress("britspalace@gmail.com");
-		if(!$mail->send()) {
-			echo "There was an error processing your request. Please contact us on +91-9158-857777.";
-		    echo 'Mailer Error: ' . $mail->ErrorInfo;
-		} else{
-			echo "<br>Booking placed. We will get back to you shortly.";
+		for ($i=0; $i < 3; $i++) { 
+			$body = "Hello Brits Palace!! My email address is " . $email . " and my contact number is " . $contact . ". I would like to book your home from " . $startdate . " for " . $days . " days.";
+			$subject="Booking";
+			$mail = new PHPMailer();
+			$mail->IsHTML(true); 
+			$mail->Host = "relay-hosting.secureserver.net";
+			$mail->From = $email;
+			$mail->Subject = $subject;
+			$mail->Body = $body;
+			$mail->WordWrap = 50;
+			$mail->AddAddress($tos[$i]);
+			if(!$mail->send()) {
+				echo "There was an error processing your request. Please contact us on +91-9158-857777.";
+			    echo 'Mailer Error: ' . $mail->ErrorInfo;
+			} else{
+				echo "<br>Booking placed. We will get back to you shortly.";
+			}
 		}
 	} else {
 		echo "Error: " . $sql . "<br>" . $conn->error;

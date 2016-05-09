@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <link rel="icon" href="favicon.png" sizes="40x40" type="image/png">
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta name="description" content="Brits Palace">
+        <meta name="description" content="Brit’s Palace is the ultimate mansion for luxury living in Goa. Visit this beautiful luxury hotel and experience the exotic way of holidaying in Goa.">
+        <meta name="Keywords" content="Brit's Palace, Brit's Palace Agassaim, Agassaim Goa, Brit's Palace Goa, Hotels in Goa, Hotel in Goa, Goa, Holiday home in Goa, Cheap hotels in Goa, Best hotels in Goa, Best hotel in Goa, Nostalgic, Serene Goa, 4 star hotel in Goa">
         <meta name="author" content="Magnus Fernandes. Amberzile">
-        <title>Home | Brits Palace</title>
+        <title>Brit's Palace - Luxury holiday home in Goa</title>
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/jquery-ui.min.css" rel="stylesheet">
         <link href="css/owl.carousel.css" rel="stylesheet">
@@ -24,10 +25,6 @@
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-        <script src="js/jquery.min.js"></script>
-        <style>
-            .loader{position:fixed;top:0;left:0;width:100%;height:100%;background-color:#f3f3f3;z-index:9999;perspective:1000px}#squarebg,#squaresm{background-color:#fff;transform-style:preserve-3d;top:50%;left:50%;position:absolute}#squarebg{margin-top:-100px;margin-left:-100px;width:200px;height:200px;border:3px solid #aa0114;-webkit-animation:spin 3s linear infinite;-moz-animation:spin 3s linear infinite -o-animation: spin 3s linear infinite;-ms-animation:spin 3s linear infinite;animation:spin 3s linear infinite}#squaresm{margin-top:-77px;margin-left:-77px;width:154px;height:154px;border:3px solid gold;-webkit-animation:spiny 3s linear infinite;-moz-animation:spiny 3s linear infinite -o-animation: spiny 3s linear infinite;-ms-animation:spiny 3s linear infinite;animation:spiny 3s linear infinite}.loader img{width:150px;height:150px;position:absolute;top:50%;left:50%;margin-top:-75px;margin-left:-75px}#animus{position:absolute;top:0;left:0;width:100%;height:100%;opacity:.5;cursor:pointer}@-webkit-keyframes spin{0%{-webkit-transform:rotateX(0);-moz-transform:rotateX(0);-o-transform:rotateX(0);-ms-transform:rotateX(0);transform:rotateX(0)}25%{-webkit-transform:rotateX(180deg);-moz-transform:rotateX(180deg);-o-transform:rotateX(180deg);-ms-transform:rotateX(180deg);transform:rotateX(180deg)}75%{-webkit-transform:none;-moz-transform:none;-o-transform:none;-ms-transform:none;transform:none}100%{-webkit-transform:rotateX(-360deg);-moz-transform:rotateX(-360deg);-o-transform:rotateX(-360deg);-ms-transform:rotateX(-360deg);transform:rotateX(-360deg)}}@keyframes spin{0%{-webkit-transform:rotateX(0);-moz-transform:rotateX(0);-o-transform:rotateX(0);-ms-transform:rotateX(0);transform:rotateX(0)}25%{-webkit-transform:rotateX(180deg);-moz-transform:rotateX(180deg);-o-transform:rotateX(180deg);-ms-transform:rotateX(180deg);transform:rotateX(180deg)}75%{-webkit-transform:none;-moz-transform:none;-o-transform:none;-ms-transform:none;transform:none}100%{-webkit-transform:rotateX(-360deg);-moz-transform:rotateX(-360deg);-o-transform:rotateX(-360deg);-ms-transform:rotateX(-360deg);transform:rotateX(-360deg)}}@-webkit-keyframes spiny{0%{-webkit-transform:rotateY(0);-moz-transform:rotateY(0);-o-transform:rotateY(0);-ms-transform:rotateY(0);transform:rotateY(0)}25%{-webkit-transform:rotateY(180deg);-moz-transform:rotateY(180deg);-o-transform:rotateY(180deg);-ms-transform:rotateY(180deg);transform:rotateY(180deg)}75%{-webkit-transform:none;-moz-transform:none;-o-transform:none;-ms-transform:none;transform:none}100%{-webkit-transform:rotateY(-360deg);-moz-transform:rotateY(-360deg);-o-transform:rotateY(-360deg);-ms-transform:rotateY(-360deg);transform:rotateY(-360deg)}}@keyframes spiny{0%{-webkit-transform:rotateY(0);-moz-transform:rotateY(0);-o-transform:rotateY(0);-ms-transform:rotateY(0);transform:rotateY(0)}25%{-webkit-transform:rotateY(180deg);-moz-transform:rotateY(180deg);-o-transform:rotateY(180deg);-ms-transform:rotateY(180deg);transform:rotateY(180deg)}75%{-webkit-transform:none;-moz-transform:none;-o-transform:none;-ms-transform:none;transform:none}100%{-webkit-transform:rotateY(-360deg);-moz-transform:rotateY(-360deg);-o-transform:rotateY(-360deg);-ms-transform:rotateY(-360deg);transform:rotateY(-360deg)}}body{overflow:hidden}
-        </style>
     </head>
     <body onload="hideloader()">
         <div class="loader">
@@ -35,10 +32,9 @@
             </div>
             <div id="squaresm">
             </div>
-            <img src="images/square.png" alt="BRIT'S PALACE">
+            <img src="images/square.png" alt="Brit's palace logo crown">
             <canvas id="animus"></canvas>
         </div>
-        <script src="js/animus.js"></script>
         <div class="mainwrapper">
             <section class="top_sec">
                 <div class="container">
@@ -46,24 +42,14 @@
                         <div class="col-xs-12 col-md-6 top_lft">
                             <div class="soc_ico">
                                 <ul>
-                                    <li class="tweet">
-                                        <a href="#">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </li>
                                     <li class="fb">
-                                        <a href="#">
+                                        <a target="_blank" href="http://www.facebook.com/britspalace">
                                             <i class="fa fa-facebook"></i>
                                         </a>
                                     </li>
-                                    <li class="insta">
-                                        <a href="#">
-                                            <i class="fa fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li class="linkd">
-                                        <a href="#">
-                                            <i class="fa fa-linkedin"></i>
+                                    <li class="google">
+                                        <a target="_blank" href="https://plus.google.com/u/0/b/107157201542857581321/107157201542857581321">
+                                            <i class="fa fa-google-plus"></i>
                                         </a>
                                     </li>
                                 </ul>
@@ -94,7 +80,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="http://britspalace.com/"><img src="images/logo.svg" alt="logo">
+                        <a class="navbar-brand" href="http://britspalace.com/"><img src="images/logo.svg" alt="Brit's palace logo">
                         </a>
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -111,7 +97,7 @@
             <div class="mainwrapper">
                 <header id="banner" class="stat_bann">
                     <div class="bannr_sec">
-                        <img id="change" src="images/banner/1.jpg" alt="Banner">
+                        <img id="change" src="images/banner/1.jpg" alt="Dynamic banner of Brit's palace">
                         <h1 class="main_titl">WELCOME TO BRITS PALACE</h1>
                         <div class="col-md-2"></div>
                         <h4 class="sub_titl col-md-8">A luxury living place and the best Goa has to offer. With the perfect blend of natural beauty and contemporary convenience, every room here is infused with light & fresh air and exudes a designer finish with chic furnishings and sleek lines.</h4>
@@ -133,17 +119,29 @@
                                             </div>
                                         </div>
                                         <div class="control-group form-group">
-                                            <div class="controls col-md-6 first">
-                                                <label>No. of days </label>
-                                                <input type="number" class="form-control" id="days" required data-validation-required-message="Please enter the days." placeholder="No of days">
+                                            <div class="controls">
+                                                <label>End date </label>
+                                                <input type="text" class="form-control" id="edate" required data-validation-required-message="Please enter a End date." placeholder="Edate">
                                                 <p class="help-block"></p>
                                             </div>
-                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="control-group form-group">
+                                            <div class="controls">
+                                                <label>Room </label>
+                                                <select name="type" id="type" class="form-control">
+                                                    <option>--Select room--</option>
+                                                    <option value="king">The King & Queen's Abode</option>
+                                                    <option value="prince">The Prince's Paradise</option>
+                                                    <option value="princess">The Princess' Dreamland</option>
+                                                    <option value="royal">The Royal Room</option>
+                                                </select>
+                                                <p class="help-block"></p>
+                                            </div>
                                         </div>
                                         <div class="control-group form-group">
                                             <div class="controls first">
                                                 <label>Contact No. </label>
-                                                <input type="phone" class="form-control" id="contact" required data-validation-required-message="Please enter your contact number." placeholder="Contact number.">
+                                                <input type="text" class="form-control" id="contact" required data-validation-required-message="Please enter your contact number." placeholder="Contact number.">
                                                 <p class="help-block"></p>
                                             </div>
                                             <div class="clearfix"></div>
@@ -151,7 +149,7 @@
                                         <div class="control-group form-group">
                                             <div class="controls first">
                                                 <label>Email ID. </label>
-                                                <input type="phone" class="form-control" id="email" required data-validation-required-message="Please enter your Email ID." placeholder="Email ID.">
+                                                <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your Email ID." placeholder="Email ID.">
                                                 <p class="help-block"></p>
                                             </div>
                                             <div class="clearfix"></div>
@@ -166,56 +164,56 @@
                                 <div id="slider" class="silde_img flexslider">
                                     <ul class="slides">
                                         <li>
-                                            <img src="images/slider/slider_1.jpg" alt="Slider image" />
+                                            <img src="images/slider/slider_1.jpg" alt="Slider image 1" />
                                             <div class="slide-info">
                                                 <p class="sli_price"> THE FACADE </p>
                                                 <p class="sli_titl"> Brit's Palace is the ultimate mansion for luxury living in Goa. This divine palatial house is unlike anything you've seen. </p>
                                             </div>
                                         </li>
                                         <li>
-                                            <img src="images/slider/slider_2.jpg" alt="Slider image" />
+                                            <img src="images/slider/slider_2.jpg" alt="Slider image 2" />
                                             <div class="slide-info">
                                                 <p class="sli_price"> THE INTERIOR </p>
                                                 <p class="sli_titl"> Built across 1500 sq.mts. with impressive amenities, nature & skyline views. </p>
                                             </div>
                                         </li>
                                         <li>
-                                            <img src="images/slider/slider_6.jpg" alt="Slider image" />
+                                            <img src="images/slider/slider_6.jpg" alt="Slider image 3" />
                                             <div class="slide-info">
                                                 <p class="sli_price"> THE LAZY LOUNGE </p>
                                                 <p class="sli_titl"> Equipped with a 65' TV, the lounge at Brit's Palace is cozy & laid back allowing you to enjoy your favourite shows and movies in HD. </p>
                                             </div>
                                         </li>
                                         <li>
-                                            <img src="images/slider/slider_7.jpg" alt="Slider image" />
+                                            <img src="images/slider/slider_7.jpg" alt="Slider image 4" />
                                             <div class="slide-info">
                                                 <p class="sli_price"> THE RUMOR MILL </p>
                                                 <p class="sli_titl"> Keep yourself updated with the happenings from around the world at The Rumor Mill. Also choose from a wide range of novels, magazines etc. </p>
                                             </div>
                                         </li>
                                         <li>
-                                            <img src="images/slider/slider_8.jpg" alt="Slider image" />
+                                            <img src="images/slider/slider_8.jpg" alt="Slider image 5" />
                                             <div class="slide-info">
-                                                <p class="sli_price"> CULINARY CUBICLE </p>
+                                                <p class="sli_price"> THE ROYAL DINING EXPERIENCE </p>
                                                 <p class="sli_titl"> Wine and dine at our majestic eat-in kitchen where everyday meals offer you a chance to sit down and enjoy a meal together. </p>
                                             </div>
                                         </li>
                                         <li>
-                                            <img src="images/slider/slider_3.jpg" alt="Slider image" />
+                                            <img src="images/slider/slider_3.jpg" alt="Slider image 6" />
                                             <div class="slide-info">
                                                 <p class="sli_price"> THE KING & QUEEN'S ABODE </p>
                                                 <p class="sli_titl"> This luxurious space has been expertly created to exceed all standards of quality. </p>
                                             </div>
                                         </li>
                                         <li>
-                                            <img src="images/slider/slider_4.jpg" alt="Slider image" />
+                                            <img src="images/slider/slider_4.jpg" alt="Slider image 7" />
                                             <div class="slide-info">
                                                 <p class="sli_price"> THE PRINCE'S PARADISE </p>
                                                 <p class="sli_titl"> Offering you serenity and tranquil galore, we at Brit's palace deliver unexpected details and comforts. </p>
                                             </div>
                                         </li>
                                         <li>
-                                            <img src="images/slider/slider_5.jpg" alt="Slider image" />
+                                            <img src="images/slider/slider_5.jpg" alt="Slider image 8" />
                                             <div class="slide-info">
                                                 <p class="sli_price"> THE PRINCESS'S DREAMLAND </p>
                                                 <p class="sli_titl"> Bright & spacious, this exquisite haven is guaranteed to refresh you & keep you coming back for more. </p>
@@ -300,10 +298,10 @@
                                 <h2>Don't miss out on the latest news and deals</h2>
                             </div>
                             <div class="col-md-6 text-left subs_form">
-                                <form name="sentMessage" id="subscribe">
+                                <form name="sentMessage">
                                     <div class="control-group form-group">
                                         <div class="controls">
-                                            <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address." placeholder="Put your email address">
+                                            <input type="email" class="form-control" id="emails" required data-validation-required-message="Please enter your email address." placeholder="Put your email address">
                                             <button type="button" id="submit" class="btn btn-primary">Subscribe</button>
                                         </div>
                                     </div>
@@ -317,8 +315,8 @@
             <div class="spacer-60"></div>
             <div id="map" class="container">
                 <div class="prop_map">
-                    <iframe width="600" height="350" frameborder="0" style="border:0"
-                    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJuQLJa6e5vzsRbuxYOUDS-Bw&key=AIzaSyAnnsvMTgnMh3ls3_E6r7P2a1Vyd0bMUWc" allowfullscreen></iframe>
+                    <iframe width="600" height="350"
+                    src="https://www.google.com/maps/embed/v1/place?q=Brit's%20palace%20goa&key=AIzaSyAnnsvMTgnMh3ls3_E6r7P2a1Vyd0bMUWc" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="spacer-60"></div>
@@ -346,7 +344,7 @@
                                         <p> <a href="tel:+91-915-885-7777"> Phone: +91-915-885-7777 </a> </p>
                                     </li>
                                     <li><i class="fa fa-phone"></i>
-                                        <p> <a href="tel: +91-832-2217377"> Phone: +91-832-2217377 </a> </p>
+                                        <p> <a href="tel:+91-832-2217377"> Phone: +91-832-2217377 </a> </p>
                                     </li>
                                     <li><i class="fa fa-envelope"></i>
                                         <p> <a href="mailto:info@britspalace.com?Subject=Bookings%20contact"> Email: info@britspalace.com </a> </p>
@@ -383,92 +381,14 @@
                 </div>
             </footer>
         </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/animus.js"></script>
         <script src="js/jquery-ui.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/jquery.flexslider-min.js"></script>
         <script src="js/main.js"></script>
-        <script>
-            var j = 1;
-            var images = ["images/banner/1.jpg", "images/banner/2.jpg", "images/banner/3.jpg", "images/banner/4.jpg", "images/banner/5.jpg"];
-            var index = 1;
-            function rotateImage(){
-                $('#change').fadeOut('slow', function(){
-                    $(this).attr('src', images[index]);
-                    $(this).fadeIn('fast', function(){
-                        if (index == images.length-1){
-                            index = 0;
-                        } else {
-                            index++;
-                        }
-                    });
-                });
-            }
-            $(document).ready(function(){
-                setInterval (rotateImage, 5000);
-            });
-            function hideloader() {
-                $('body').addClass('loaded');
-                $('body').css('overflow', 'auto');
-            }
-            $( "#date" ).datepicker();
-            function isEmail(email) {
-                var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-                return regex.test(email);
-            }
-            $('#subscribe #submit').click(function(event) {
-                var file = "subscribe.php";
-                var email = $('#subscribe #email').val();
-                if (!isEmail(email)) {
-                    $('#subbed').text('Please enter a valid email address.');
-                    setTimeout(function() {
-                        $("#subbed").html("")
-                    }, 4000);
-                } else{
-                    $.ajax({
-                        url: file,
-                        type: 'POST',
-                        data: {param: email},
-                        success: function(result){
-                            $('#subscribe #email').val("");
-                            $("#subbed").html(result);
-                            setTimeout(function() {
-                                $("#subbed").html("")
-                            }, 7000);
-                        }
-                    });
-                }
-            });
-            $('#booking #book').click(function(event) {
-                var file = "book.php";
-                var date = $('#booking #date').val();
-                var days = $('#booking #days').val();
-                var email = $('#booking #email').val();
-                var contact = $('#booking #contact').val();
-                if (!isEmail(email)) {
-                    $('#booked').text('Please enter a valid email address.');
-                    setTimeout(function() {
-                        $("#booked").html("")
-                    }, 4000);
-                } else{
-                    $.ajax({
-                        url: file,
-                        type: 'POST',
-                        data: {email: email, date: date, days: days, contact: contact},
-                        success: function(result){
-                            $('#booking #date').val("");
-                            $('#booking #days').val("");
-                            $('#booking #email').val("");
-                            $('#booking #contact').val("");
-                            $("#booked").html(result);
-                            setTimeout(function() {
-                                $("#booked").html("")
-                            }, 7000);
-                        }
-                    });
-                }
-            });
-        </script>
+        <script src="js/home.js"></script>
         <?php
             require "connect.php";
             $date = date('Y-m-d H:i:s');

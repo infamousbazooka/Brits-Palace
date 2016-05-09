@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <link rel="icon" href="../favicon.png" sizes="40x40" type="image/png">
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta name="description" content="Brits Palace">
+        <meta name="description" content="Brit’s Palace is the ultimate mansion for luxury living in Goa. Visit this beautiful luxury hotel and experience the exotic way of holidaying in Goa.">
+        <meta name="Keywords" content="Brit's Palace, Brit's Palace Agassaim, Agassaim Goa, Brit's Palace Goa, Hotels in Goa, Hotel in Goa, Goa, Holiday home in Goa, Cheap hotels in Goa, Best hotels in Goa, Best hotel in Goa, Nostalgic, Serene Goa, 4 star hotel in Goa">
         <meta name="author" content="Magnus Fernandes. Amberzile">
-        <title>Gallery | Brits Palace</title>
+        <title>Gallery | Brit's Palace - Luxury holiday home in Goa</title>
         <link rel="stylesheet" type="text/css" href="css/demo.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link rel="stylesheet" type="text/css" href="css/elastislide.css" />
@@ -67,24 +68,14 @@
                     <div class="col-xs-12 col-md-6 top_lft">
                         <div class="soc_ico">
                             <ul>
-                                <li class="tweet">
-                                    <a href="#">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </li>
                                 <li class="fb">
-                                    <a href="#">
+                                    <a href="http://www.facebook.com/britspalace">
                                         <i class="fa fa-facebook"></i>
                                     </a>
                                 </li>
-                                <li class="insta">
-                                    <a href="#">
-                                        <i class="fa fa-instagram"></i>
-                                    </a>
-                                </li>
-                                <li class="linkd">
-                                    <a href="#">
-                                        <i class="fa fa-linkedin"></i>
+                                <li class="google">
+                                    <a target="_blank" href="https://plus.google.com/u/0/b/107157201542857581321/107157201542857581321">
+                                        <i class="fa fa-google-plus"></i>
                                     </a>
                                 </li>
                             </ul>
@@ -162,7 +153,6 @@
                                 <div class="es-carousel">
                                     <ul>
                                         <li><a href="#"><img src="images/thumbs/1.jpg" data-large="images/1.jpg" alt="image01" /></a></li>
-                                        <li><a href="#"><img src="images/thumbs/2.jpg" data-large="images/2.jpg" alt="image02" /></a></li>
                                         <li><a href="#"><img src="images/thumbs/3.jpg" data-large="images/3.jpg" alt="image03" /></a></li>
                                         <li><a href="#"><img src="images/thumbs/4.jpg" data-large="images/4.jpg" alt="image04" /></a></li>
                                         <li><a href="#"><img src="images/thumbs/5.jpg" data-large="images/5.jpg" alt="image05" /></a></li>
@@ -172,14 +162,14 @@
                                         <li><a href="#"><img src="images/thumbs/9.jpg" data-large="images/9.jpg" alt="image09" /></a></li>
                                         <li><a href="#"><img src="images/thumbs/10.jpg" data-large="images/10.jpg" alt="image10" /></a></li>
                                         <li><a href="#"><img src="images/thumbs/11.jpg" data-large="images/11.jpg" alt="image11" /></a></li>
+                                        <li><a href="#"><img src="images/thumbs/18.jpg" data-large="images/18.jpg" alt="image18" /></a></li>
+                                        <li><a href="#"><img src="images/thumbs/19.jpg" data-large="images/19.jpg" alt="image19" /></a></li>
                                         <li><a href="#"><img src="images/thumbs/12.jpg" data-large="images/12.jpg" alt="image12" /></a></li>
                                         <li><a href="#"><img src="images/thumbs/13.jpg" data-large="images/13.jpg" alt="image13" /></a></li>
                                         <li><a href="#"><img src="images/thumbs/14.jpg" data-large="images/14.jpg" alt="image14" /></a></li>
                                         <li><a href="#"><img src="images/thumbs/15.jpg" data-large="images/15.jpg" alt="image15" /></a></li>
                                         <li><a href="#"><img src="images/thumbs/16.jpg" data-large="images/16.jpg" alt="image16" /></a></li>
                                         <li><a href="#"><img src="images/thumbs/17.jpg" data-large="images/17.jpg" alt="image17" /></a></li>
-                                        <li><a href="#"><img src="images/thumbs/18.jpg" data-large="images/18.jpg" alt="image18" /></a></li>
-                                        <li><a href="#"><img src="images/thumbs/19.jpg" data-large="images/19.jpg" alt="image19" /></a></li>
                                     </ul>
                                 </div>
                             </div>
